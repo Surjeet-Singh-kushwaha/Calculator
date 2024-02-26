@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(21, 8, 8);
+}
+.Container{
+
+    display: grid;
+    width:400px;
+    height:610px;
+    background-color: black;
+    grid-template-columns: 80px  80px  80px  80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px;
+    gap: 21px;
+    border-radius: 32px;
+    /* border: 5px solid ; */
+}
+.Display{
+  width: 395px;
+  height: 45px;
+    color: white;
+    grid-column: 1/ span 4;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    text-align: end;
+    padding-top: 46px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+ border-top-right-radius: 25px;
+ border-top-left-radius: 25px;
+  
+}
+.equal{
+    grid-column: 3/ span 2;
+    /* width: 200px;
+    height: 200px;*/
+} 
+.button{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     /* padding-top: 50%; */
+     /* border: 2px solid silver ; */
+     background-color: #212121;
+     color:bisque;
+     font-family: 'Roboto', sans-serif;
+  
+     font-weight: bolder;
+     font-size: larger;
+     border-radius: 50%;
+     cursor: pointer;
+     transform: translate(10px ,10px);
+     /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); */
+/* width: 80px;
+height: 80px; */
+}
+@keyframes shine {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .shining-shadow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+
+.button:active{
+   
+    background-color: rgba(255, 255, 255, 0.8);
+      
+}
